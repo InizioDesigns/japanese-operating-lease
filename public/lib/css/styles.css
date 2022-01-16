@@ -1,0 +1,2661 @@
+/* ====================================  M I X I N S  ======================== */
+/* ====================================  R E S E T  ======================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+
+/* ====================================  T Y P O G R A P H Y  S T Y L E S  ======================== */
+@font-face {
+  font-family: 'Blair';
+  src: url("/lib/fonts/BlairMdITC-TT-Medium_7292.ttf") format("truetype"), url("/lib/fonts/BlairMdITC-TT-Medium_7292.woff") format("woff"); }
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cinzel-Regular"), url("/lib/fonts/Cinzel-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("/lib/fonts/OpenSans-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url("/lib/fonts/OpenSans-Regular.ttf") format("truetype"), url("/lib/fonts/OpenSans-Regular.woff") format("woff"); }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("/lib/fonts/OpenSans-Semibold.ttf") format("truetype"), url("/lib/fonts/OpenSans-Semibold.woff") format("woff"); }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("/lib/fonts/OpenSans-Bold.ttf") format("truetype"), url("/lib/fonts/OpenSans-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'icomoon';
+  src: url("/lib/fonts/icomoon.eot?erzkw5");
+  src: url("/lib/fonts/icomoon.eot?#iefixerzkw5") format("embedded-opentype"), url("/lib/fonts/icomoon.woff?erzkw5") format("woff"), url("/lib/fonts/icomoon.ttf?erzkw5") format("truetype"), url("/lib/fonts/icomoon.svg?erzkw5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+  
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-web:before {
+  content: "\e601"; }
+
+.icon-dvr:before {
+  content: "\e602"; }
+
+.icon-poll:before {
+  content: "\e603"; }
+
+.icon-arrow-right:before {
+  content: "\e600"; }
+
+.icon-menu3:before {
+  content: "\e9bf"; }
+
+.icon-menu4:before {
+  content: "\e9c0"; }
+
+body {
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px; }
+  body p, body ul {
+    line-height: 18px; }
+
+a {
+  color: inherit; }
+  a:hover {
+    text-decoration: none; }
+
+small {
+  font-size: 12px; }
+
+p.pass {
+  color: #2c8e18; }
+
+p.alert {
+  color: #a02929; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+  font-size: smaller;
+  padding-left: 1px;
+  padding-right: 1px; }
+
+sub {
+  top: 0.4em; }
+
+/* ====================================  F O R M  S T Y L E S  ======================== */
+form div {
+  margin: 10px 0; }
+
+label {
+  text-indent: -9999px;
+  position: absolute; }
+
+input, textarea {
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px; }
+
+/* ====================================  S I T E  S T Y L E S  ======================== */
+.ja {
+  text-align: left;
+}
+.flagLink a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.flagLink img {
+  margin-right: 4px;
+}
+#homepage #homeNav > a, #aboutus #aboutNav > a, #deals #dealsNav > a, #team #clientNav > a, #news #newsNav > a, #contact #contactNav > a {
+  background-color: #101920; }
+
+h1 {
+  color: #C6D7E7;
+  color: #e9e9e9;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 26px; }
+
+h2 {
+  color: #C6D7E7;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px; }
+
+dl#headerContact {
+  font-family: "Blair", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  text-transform: uppercase; }
+  dl#headerContact dt {
+    color: #2f648e; }
+  dl#headerContact dd {
+    color: #000;
+    margin-bottom: 5px; }
+
+#sipcMember {
+  background-color: #E5E5E4;
+  color: #2f648e;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px; }
+  #sipcMember img {
+    vertical-align: middle;
+    margin-left: 20px; }
+
+section#content dl {
+  padding: 0 6%; }
+
+.widthsidebar ul li {
+  list-style: none; }
+
+input[type=text], input[type=password], input[type=email], input[type=tel], textarea {
+  border: 1px solid #ccc;
+  padding: 10px 15px; }
+
+.clear {
+  clear: both; }
+
+.columns2 {
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 50px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 50px;
+  /* Firefox */
+  column-gap: 50px;
+  text-align: justify; }
+
+.sipclink {
+  text-decoration: none; }
+
+footer .sipclink {
+  text-decoration: underline; }
+
+/* ====================================  header  ================================ */
+a#mainlogo {
+  display: block; }
+  a#mainlogo img {
+    width: 100%;
+    max-width: 375px;
+    display: block; }
+
+nav#mainnav {
+  color: #fff;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase; }
+  nav#mainnav ul {
+    overflow: hidden;
+    line-height: 15px; }
+  nav#mainnav li {
+    float: left;
+    list-style: none; }
+  nav#mainnav li:nth-last-child(1) {
+    margin-bottom: 0px; }
+  nav#mainnav a, nav#mainnav span {
+    text-decoration: none;
+    display: block;
+    padding: 10px 30%; }
+    nav#mainnav a:hover, nav#mainnav span:hover {
+      background-color: #101920; }
+    nav#mainnav a i, nav#mainnav span i {
+      float: right; }
+
+#mobilenavicon {
+  display: none; }
+
+/* ====================================  footer  ================================ */
+#investornote {
+  display: none; }
+
+#footerWrapper {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 20px 6% 5px;
+  text-align: center; }
+  #footerWrapper p {
+    margin-bottom: 15px; }
+
+/* ====================================  H O M E  P A G E  ============================= */
+#homepage section#content aside ul {
+  padding: 0; }
+#homepage section#content aside li {
+  list-style: none; }
+#homepage section#content aside figure img {
+  display: block;
+  width: 100%; }
+#homepage section#content aside .rulespacing {
+  margin-bottom: 40px; }
+#homepage .tbd {
+  display: none; }
+
+/* ====================================  I N V E S T O R S  ================================ */
+ol.notes {
+  margin-left: 6%;
+  margin-bottom: 20px;
+  list-style: decimal;
+  padding-left: 15px; }
+  ol.notes li {
+    font-style: italic;
+    line-height: 18px; }
+
+#investors #investornote {
+  display: inline; }
+
+/* ====================================  A B O U T   U S  ============================= */
+#team .contactInfo {
+  clear: both;
+  padding-top: 5px; }
+
+#staffList {
+  list-style: none;
+  text-align: center; }
+  #staffList h3, #staffList h4 {
+    background-color: transparent;
+    color: #5C666F;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    padding: 0; }
+  #staffList h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2f648e;
+    margin-bottom: 5px; }
+  #staffList h4 {
+    margin-bottom: 15px; }
+  #staffList img {
+    width: 60%;
+    display: block;
+    margin: 0 auto 15px; }
+  #staffList p.contactInfo span, #staffList p.contactInfo a {
+    display: block;
+    margin-top: 5px; }
+
+/* ====================================  D E A L S  ====================================== */
+#deals ul#dealsList {
+  list-style: none;
+  padding: 0; }
+  #deals ul#dealsList li {
+    padding-top: 15px; }
+  #deals ul#dealsList h2 {
+    margin-bottom: 10px;
+    color: #328ecc;
+    background-color: transparent;
+    text-align: left;
+    padding: 0 6%; }
+
+/* ====================================  C L I E N T S  ============================= */
+#clients #container {
+  background: url("/lib/img/background_images/clients_small.jpg") right 70px no-repeat; }
+#clients .clientList {
+  overflow: hidden;
+  background-color: #eee;
+  padding: 4%; }
+  #clients .clientList li {
+    width: 46%;
+    float: left;
+    list-style: none;
+    padding: 1% 2%; }
+    #clients .clientList li img {
+      width: 100%;
+      border: 1px solid #ddd; }
+
+/* ====================================  N E W S   P A G E S  =========================== */
+#news #content {
+  overflow: hidden; }
+#news #logo {
+  background-color: white; }
+#news #overlay {
+  position: absolute;
+  left: -9999px;
+  top: 0; }
+  #news #overlay #contactbox h2 span {
+    font-size: 14px;
+    color: white; }
+  #news #overlay #newscontactform {
+    width: 300px;
+    margin: 0 auto; }
+    #news #overlay #newscontactform input[type="text"], #news #overlay #newscontactform input[type="password"], #news #overlay #newscontactform input[type="email"], #news #overlay #newscontactform input[type="tel"], #news #overlay #newscontactform textarea {
+      width: 268px; }
+    #news #overlay #newscontactform #send {
+      margin-left: 65px; }
+#news #overlay.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: 20;
+  background-color: rgba(16, 25, 32, 0.85); }
+#news #newsList li {
+  list-style: none;
+  padding: 5px 6%; }
+  #news #newsList li span {
+    font-weight: bold;
+    color: #328ecc; }
+#news #newsList h3 {
+  background-color: transparent;
+  text-align: left;
+  color: black; }
+#news #newsList article header {
+  padding-top: 10px;
+  overflow: hidden; }
+  #news #newsList article header h4 {
+    font-family: "Blair", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-bottom: 10px; }
+  #news #newsList article header p {
+    color: #A8BAC5;
+    margin-top: 0; }
+    #news #newsList article header p time {
+      color: #D8EAF4;
+      margin-left: 10px; }
+#news #articleList li {
+  background-color: rgba(92, 102, 111, 0.4);
+  padding: 3% 4%;
+  margin-bottom: 2%;
+  position: relative;
+  list-style: none; }
+  #news #articleList li .article-info {
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 0; }
+    #news #articleList li .article-info a {
+      display: inline-block; }
+    #news #articleList li .article-info a:nth-child(2) {
+      float: right; }
+#news #articleList .showall {
+  color: #fff; }
+  #news #articleList .showall:hover {
+    background-color: rgba(92, 102, 111, 0.7);
+    cursor: pointer; }
+#news .askQuestion {
+  text-decoration: none;
+  background-color: #efefef;
+  padding: 2px 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  vertical-align: text-bottom; }
+  #news .askQuestion:hover {
+    background-color: #2f648e;
+    color: #fff; }
+#news .readmore {
+  font-family: Arial, helvetica, sans-serif;
+  background-color: #267DB7;
+  width: 45px;
+  text-align: center;
+  padding: 10px 5px;
+  display: block;
+  line-height: 16px;
+  position: absolute;
+  right: -8px;
+  top: -8px; }
+  #news .readmore:hover {
+    background-color: #1F74AD;
+    cursor: pointer; }
+#news aside h2 span {
+  font-size: 16px; }
+#news aside form input, #news aside form textarea {
+  width: 75%; }
+#news #footnote {
+  clear: both; }
+
+/* ====================================  C O N T A C T  ================================ */
+#contact .vcard {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px; }
+  #contact .vcard .addr {
+    margin-bottom: 10px; }
+  #contact .vcard p {
+    padding-bottom: 0px; }
+  #contact .vcard dl {
+    line-height: 18px;
+    margin-top: 20px; }
+    #contact .vcard dl dd {
+      margin-bottom: 10px; }
+  #contact .vcard a {
+    color: #2F648E; }
+#contact #drivingSection ol {
+  margin-left: 16px;
+  margin-bottom: 20px;
+  line-height: 20px; }
+
+/* ====================================  C O N T A C T  ================================ */
+#reports h1 {
+  padding-top: 30px; }
+#reports h2 {
+  padding-top: 30px;
+  margin-bottom: 20px; }
+#reports #content {
+  padding-bottom: 20px; }
+
+/* ================================================  B O T H   M O B I L E  ==========================*/
+@media only screen and (max-width: 799px) {
+  /* ====================================  S I T E  S T Y L E S  ======================== */
+  h1, h2, h3, h4 {
+    color: #fff;
+    text-align: center;
+    padding: 15px 6%;
+    font-family: "Blair", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400; }
+
+  h1 {
+    background-color: #101920;
+    background-color: rgba(16, 25, 32, 0.6); }
+
+  h2, h4 {
+    background-color: #5C666F; }
+
+  h3 {
+    background-color: #101920; }
+
+  section#content p, section#content ul, section#content figure {
+    padding: 0px 6% 15px; }
+  section#content figure img {
+    margin-bottom: 15px; }
+  section#content aside h1, section#content aside h2, section#content aside h3, section#content aside h4 {
+    margin-bottom: 15px; }
+
+  #maincontent {
+    background-color: white; }
+
+  /* ====================================  header  ================================ */
+  a#mainlogo {
+    padding: 8px 6%;
+    height: 55px;
+    margin-bottom: 7px; }
+
+  dl#headerContact {
+    display: none; }
+
+  #mobilenavicon {
+    display: block;
+    height: 24px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 5px 0;
+    text-align: center; }
+
+  nav#mainnav {
+    margin: 20px 10%; }
+    nav#mainnav li {
+      background-color: #101920;
+      background-color: rgba(16, 25, 32, 0.85);
+      float: none;
+      margin-bottom: 5px; }
+      nav#mainnav li ul.subnav {
+        padding: 5px 0px 5px 7px; }
+        nav#mainnav li ul.subnav li {
+          background-color: transparent;
+          padding-left: 15px;
+          border-top: 1px solid rgba(255, 255, 255, 0.3); }
+        nav#mainnav li ul.subnav#productsSubnav {
+          padding-left: 0; }
+    nav#mainnav a, nav#mainnav span {
+      padding: 10px; }
+      nav#mainnav a:hover, nav#mainnav span:hover {
+        background-color: transparent; }
+    nav#mainnav span {
+      color: white;
+      color: rgba(255, 255, 255, 0.5); }
+    nav#mainnav span:after {
+      content: ':'; }
+
+  section#content .listbox {
+    padding-left: 8.5%; }
+
+  .listbox li {
+    margin-bottom: 5px; }
+
+  ol.notes {
+    padding-left: 0px;
+    margin-right: 6%;
+    margin-left: 6%; }
+
+  ol.notes li {
+    list-style: none; }
+
+  /* ====================================  H O M E P A G E  ======================== */
+  #homepage h1 {
+    margin-bottom: 15px; }
+  #homepage aside hr {
+    display: none; }
+
+  #sipcMember {
+    font-size: 16px; }
+    #sipcMember img {
+      display: block;
+      margin: 10px auto 0;
+      width: 75px; }
+
+  #focalPoints li {
+    background-color: #E5E5E4;
+    list-style: none;
+    text-transform: uppercase;
+    color: #2f648e;
+    list-style: outside none none;
+    margin-bottom: 5px;
+    padding: 8px 15px; }
+
+  #ticker li {
+    padding-right: 6%;
+    padding-left: 6%; }
+
+  #whiteSIPC {
+    display: none; }
+
+  section#content aside #randNewsItems h2 {
+    margin-bottom: 0; }
+
+  #clientstxt:before {
+    content: ' and '; }
+
+  #randNewsItems {
+    display: none; }
+
+  /* ====================================  A B O U T   U S  ======================== */
+  #aboutus #content .aboutusp {
+    padding-top: 15px; }
+  #aboutus #content figure {
+    background-color: #fff;
+    text-align: center; }
+    #aboutus #content figure img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 0 auto 10px; }
+  #aboutus #content ul {
+    margin: 15px auto 0;
+    padding-bottom: 8px; }
+    #aboutus #content ul li {
+      background-color: #E5E5E4;
+      list-style: none;
+      padding: 8px 15px;
+      margin-bottom: 5px; }
+  #aboutus #content p {
+    clear: both; }
+
+  /* ====================================  A I R L I N E S  &  I S S U E R S  ======================== */
+  #issuers h1 {
+    margin-bottom: 20px; }
+  #issuers #content .aboutusp {
+    padding-top: 15px; }
+  #issuers #content figure {
+    background-color: #000;
+    text-align: center;
+    padding-top: 20px; }
+    #issuers #content figure img {
+      width: 30%;
+      max-width: 200px;
+      display: block;
+      margin: 0 auto; }
+  #issuers .listbox {
+    padding-top: 15px; }
+  #issuers aside ul {
+    margin: 15px auto 0;
+    padding-bottom: 8px; }
+    #issuers aside ul li {
+      background-color: #E5E5E4;
+      list-style: none;
+      padding: 8px 15px;
+      margin-bottom: 5px; }
+  #issuers aside p {
+    clear: both;
+    padding: 7px 6% 15px; }
+
+  /* ====================================  I N V E S T O R S  ============================= */
+  #investors hr {
+    display: none; }
+  #investors h1 {
+    margin-bottom: 20px; }
+  #investors h2 {
+    margin-bottom: 20px; }
+
+  /* ====================================  O U R  T E A M  ======================== */
+  section#content #staffList {
+    list-style: none;
+    text-align: center;
+    padding: 0; }
+    section#content #staffList li {
+      padding: 30px 6% 15px; }
+    section#content #staffList li:nth-child(odd) {
+      background-color: #eee; }
+
+  /* ====================================  D E A L S  ======================== */
+  #deals #content > p {
+    padding-top: 15px; }
+  #deals form#loginform {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 10px 6%; 
+    }
+    #deals form#loginform input[type=text], #deals form#loginform input[type=password] {
+      width: 50%; }
+  #deals aside#sidebar {
+    text-align: center; }
+    #deals aside#sidebar h3 {
+      background-color: transparent;
+      color: #328ecc;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 10px; }
+    #deals aside#sidebar li {
+      display: block;
+      width: 100%; }
+      #deals aside#sidebar li img {
+        display: none; }
+      #deals aside#sidebar li h2 {
+        background-color: rgba(16, 25, 32, 0.6);
+        padding: 15px 6%;
+        color: white;
+        text-align: center; }
+
+  /* ==================================== F I N A N C I A L  S T R E N G T H  =========================== */
+  #financialstrength.interior h1 {
+    margin-bottom: 20px; }
+  #financialstrength.interior video {
+    display: none; }
+
+  /* ====================================  N E W S  ======================== */
+  #news aside#sidebar {
+    display: none; }
+  #news .askQuestion {
+    display: none; }
+  #news #ticker h2 {
+    margin-bottom: 20px; }
+  #news #ticker .article {
+    padding-bottom: 20px; }
+    #news #ticker .article h2 {
+      margin-bottom: 0; }
+    #news #ticker .article h3 {
+      margin-bottom: 20px; }
+  #news a#mainlogo {
+    background-color: #fff; }
+  #news #newsList li {
+    padding-top: 15px;
+    overflow: hidden; }
+    #news #newsList li h2 span {
+      color: #94bae0;
+      margin-left: 10px; }
+    #news #newsList li h3 {
+      padding: 15px 0; }
+    #news #newsList li.article {
+      padding-bottom: 15px; }
+    #news #newsList li article {
+      clear: both; }
+      #news #newsList li article header p {
+        color: #587D93;
+        font-weight: bold; }
+        #news #newsList li article header p time {
+          color: #6DA6C3; }
+    #news #newsList li:nth-child(even) {
+      background-color: #eee; }
+    #news #newsList li span {
+      margin-bottom: 5px;
+      display: inline-block; }
+    #news #newsList li p {
+      padding: 0;
+      padding-bottom: 15px; }
+    #news #newsList li span.readmore, #news #newsList li .downloadPDF {
+      width: 44%;
+      display: inline-block;
+      text-align: center;
+      padding: 2%;
+      margin: 1%;
+      background-color: #707579;
+      color: #fff;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      float: left; }
+  #news .newsList {
+    clear: both;
+    padding: 0; }
+
+  /* ====================================  C O N T A C T  ================================ */
+  #contact dl dd {
+    margin-bottom: 20px; }
+  #contact .vcard p {
+    line-height: 22px;
+    padding-bottom: 5px; }
+  #contact .vcard #localtime {
+    overflow: auto;
+    padding-bottom: 5px; }
+    #contact .vcard #localtime p {
+      display: inline-block;
+      float: left; }
+  #contact .vcard canvas#clock {
+    background-color: #000;
+    float: left;
+    padding: 2px; }
+  #contact #mapInset {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px; }
+    #contact #mapInset span {
+      display: none; }
+  #contact #contactDirections {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 6%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center; }
+    #contact #contactDirections p {
+      padding-bottom: 0; }
+    #contact #contactDirections a {
+      text-decoration: underline; }
+    #contact #contactDirections #dwnldDirections {
+      display: block;
+      padding-top: 10px; }
+  #contact #drivingSection img {
+    margin: 0 auto 10px;
+    display: block; }
+  #contact #drivingSection section {
+    padding: 0 6%; }
+  #contact #clock {
+    display: none; }
+
+  /* ====================================  footer  ================================ */
+  #footerWrapper {
+    background-color: #101920;
+    color: #9D9D9D; } }
+/* ==========================================  P O R T R A I T   M O B I L E  ==========================*/
+@media only screen and (max-width: 450px) {
+  /* ====================================  H O M E  P A G E  ============================= */
+  #homepage #headerwrapper {
+    background: url("/lib/img/background_images/plane_background_small_v3.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  A B O U T   U S  ============================= */
+  #aboutus #headerwrapper {
+    background: url("/lib/img/background_images/train_small.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  A I R L I N E S  &  I S S U E R S  ======================== */
+  #issuers #headerwrapper {
+    background: url("/lib/img/background_images/issuersbg-lg.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  I N V E S T O R S  ============================= */
+  #investors #headerwrapper {
+    background: url("/lib/img/background_images/cargo4_small.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+  #investors .columns2 {
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1;
+    -webkit-column-gap: 0px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px;
+    /* Firefox */
+    column-gap: 0px; }
+
+  /* ====================================  O P P O R T U N I T I E S  ============================= */
+  #deals #headerwrapper {
+    background: url("/lib/img/background_images/trainyard_small.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  O U R  T E A M  ======================== */
+  #team #headerwrapper {
+    background: url("/lib/img/background_images/jet1_small.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  F I N A N C I A L   S T R E N G T H  ======================== */
+  #financialstrength #headerwrapper {
+    background: url("/lib/img/background_images/pumpjack_small.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  N E W S   P A G E S  =========================== */
+  #news #headerwrapper {
+    background: url("/lib/img/background_images/cargo3_small.jpg") center bottom/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  P A G E  N O T  F O U N D  ====================================== */
+  #pagenotfound #container {
+    background: url("/lib/img/background_images/clouds_small.jpg") right 70px no-repeat; }
+
+  /* ====================================  C O N T A C T  ================================ */
+  #contact #headerwrapper {
+    background: url("/lib/img/Burnham_location_small.jpg") center 70px/cover no-repeat;
+    overflow: auto; } }
+/* ================================================  W I D E   M O B I L E  ==========================*/
+@media only screen and (min-width: 450px) and (max-width: 799px) {
+  /* ====================================  H O M E  P A G E  ============================= */
+  #homepage #headerwrapper {
+    background: url("/lib/img/background_images/homepagebg-lg.jpg") center 70px no-repeat;
+    overflow: auto; }
+  #homepage #content {
+    background-color: #fff; }
+  #homepage h1 {
+    background-color: #101920; }
+
+  /* ====================================  A B O U T   U S   P A G E  ======================== */
+  #aboutus #headerwrapper {
+    background: url("/lib/img/background_images/train_medium.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+  #aboutus #content > p {
+    background-color: #fff;
+    padding-top: 15px; }
+
+  /* ====================================  A I R L I N E S  &  I S S U E R S  ======================== */
+  #issuers #headerwrapper {
+    background: url("/lib/img/background_images/issuersbg-lg.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+  #issuers #content > p {
+    background-color: #fff;
+    padding-top: 15px; }
+
+  /* ====================================  I N V E S T O R S  ============================= */
+  #investors #headerwrapper {
+    background: url("/lib/img/background_images/cargo4_medium.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  O U R  T E A M  ======================== */
+  #team #headerwrapper {
+    background: url("/lib/img/background_images/jet1_medium.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  F I N A N C I A L   S T R E N G T H  ======================== */
+  #financialstrength #headerwrapper {
+    background: url("/lib/img/background_images/pumpjack_small.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  O P P O R T U N I T I E S  ============================= */
+  #deals #headerwrapper {
+    background: url("/lib/img/background_images/trainyard_medium.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  D E A L S  ====================================== */
+  #deals #content > p {
+    background-color: #fff;
+    padding-top: 15px; }
+  #deals #container {
+    background: url("/lib/img/background_images/trainyard_medium.jpg") center 70px/cover no-repeat; }
+
+  #team #container {
+    background: url("/lib/img/background_images/deals_medium.jpg") center 70px no-repeat; }
+
+  /* ====================================  C L I E N T S  ============================= */
+  #clients #container {
+    background: url("/lib/img/background_images/clients_medium.jpg") right 70px no-repeat; }
+  #clients .clientList li {
+    width: 29%; }
+
+  /* ====================================  N E W S   P A G E S  =========================== */
+  #news #headerwrapper {
+    background: url("/lib/img/background_images/cargo3_medium.jpg") center bottom/cover no-repeat;
+    overflow: auto; }
+
+  /* ====================================  P A G E  N O T  F O U N D  ====================================== */
+  #pagenotfound #container {
+    background: url("/lib/img/background_images/clouds_medium.jpg") right 70px no-repeat; }
+
+  /* ====================================  C O N T A C T   U S  ======================== */
+  #contact #headerwrapper {
+    background: url("/lib/img/Burnham_location_medium.jpg") center 70px/cover no-repeat;
+    overflow: auto; }
+  #contact h1 {
+    margin-bottom: 0; }
+  #contact #contactInfo {
+    background-color: #fff;
+    padding-top: 15px; }
+  #contact #drivingSection {
+    text-align: center; } }
+/* ================================================  T A B L E T  &  D E S K T O P  ==========================*/
+@media only screen and (min-width: 800px) {
+  /* ====================================  header  ================================ */
+  header {
+    padding-top: 20px; }
+
+  a#mainlogo {
+    float: left;
+    width: 475px;
+    margin-left: 6%; }
+    a#mainlogo img {
+      width: 100%;
+      max-width: 475px;
+      display: block; }
+
+  dl#headerContact {
+    float: right;
+    margin-right: 6%;
+    margin-bottom: 10px; }
+
+  nav#mainnav {
+    background-color: #101920;
+    background-color: rgba(16, 25, 32, 0.7);
+    position: relative;
+    z-index: 5;
+    clear: both;
+    height: 35px; }
+    nav#mainnav ul {
+      margin: 0 auto;
+      width: 88%; }
+    nav#mainnav li {
+      text-align: center; }
+      nav#mainnav li ul {
+        display: none;
+        position: absolute; }
+        nav#mainnav li ul li {
+          background-color: #101920;
+          background-color: rgba(16, 25, 32, 0.7);
+          border-top: 1px solid black; }
+      nav#mainnav li:hover ul {
+        display: block; }
+    nav#mainnav a, nav#mainnav span {
+      padding: 10px 35px; }
+    nav#mainnav i {
+      display: none; }
+
+  /* ====================================  S I T E S T Y L E S  ======================== */
+  /* body:not(#homepage):not(.big) { */
+  .interior #container{
+    background: url("/lib/img/background_images/waterbg.jpg") left top repeat transparent; }
+
+  .interior:not(#contact) h1, .interior:not(#contact) h2 {
+    text-align: center;
+    font-family: "Blair", Arial, Helvetica, sans-serif; }
+  .interior:not(#contact) h1 {
+    font-size: 22px;
+    line-height: 22px; }
+  .interior:not(#contact) h2 {
+    font-size: 18px; }
+  .interior:not(#contact) section p {
+    margin: 10px 6%;
+    color: white; }
+
+  .interior #mainnav {
+    position: relative;
+    z-index: 5; }
+  .interior #maincontent {
+    position: relative; }
+
+  .interior:not(#contact) #headerwrapper {
+    background-color: #fff; }
+  .interior:not(#contact) #container {
+    background-color: rgba(16, 25, 32, 0.6); }
+    .interior:not(#contact) #container #content {
+      color: #000; }
+
+  .widthsidebar {
+    float: left;
+    width: 63%;
+    margin-left: 6%; }
+    .widthsidebar p, .widthsidebar ul#dealsList h2 {
+      margin-left: 0;
+      padding-left: 0; }
+
+  aside#sidebar {
+    float: right;
+    width: 24%;
+    margin-right: 6%;
+    margin-top: 264px;
+    background-color: #eee;
+    padding-top: 1%;
+    padding-bottom: 1%; }
+
+  #sipcMember {
+    clear: both; }
+
+  .listbox {
+    background-color: #e9e9e9;
+    color: #2f648e; }
+
+  /* ----------- big -------- */
+  html body.interior.big {
+    background: #EDEDED;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px; }
+    html body.interior.big #container {
+      background-color: transparent !important; }
+      html body.interior.big #container header {
+        height: 87px;
+        padding-top: 0; }
+        html body.interior.big #container header a {
+          width: 383px;
+          height: 67px;
+          display: block;
+          margin: 0 auto; }
+          html body.interior.big #container header a img {
+            margin-top: 15px; }
+      html body.interior.big #container #maincontent {
+        padding: 20px 0;
+        background: #315167; }
+        html body.interior.big #container #maincontent #shell {
+          overflow: hidden; }
+      html body.interior.big #container #homeIntro {
+        text-align: center; }
+      html body.interior.big #container section#goToBig, html body.interior.big #container section#goToDeals {
+        width: 48%;
+        margin: 1%;
+        float: left;
+        text-align: center;
+        margin-top: 20px; }
+        html body.interior.big #container section#goToBig a, html body.interior.big #container section#goToDeals a {
+          text-decoration: none;
+          text-align: center;
+          display: block;
+          border: 2px solid #1d2f3c;
+          border-radius: 4px;
+          background-color: #1D2F3C;
+          padding: 20px 0 10px 0; }
+          html body.interior.big #container section#goToBig a i, html body.interior.big #container section#goToDeals a i {
+            display: inline-block;
+            color: #315167;
+            background-color: #fff;
+            border-radius: 38px;
+            font-size: 30px;
+            width: 75px;
+            line-height: 75px; }
+          html body.interior.big #container section#goToBig a span:not(.login), html body.interior.big #container section#goToDeals a span:not(.login) {
+            display: block;
+            font-size: 28px;
+            color: #e9e9e9;
+            line-height: 46px;
+            font-family: "Blair", Arial, Helvetica, sans-serif; }
+          html body.interior.big #container section#goToBig a:hover, html body.interior.big #container section#goToDeals a:hover {
+            background-color: #203B4C;
+            border: 2px solid #203B4C; }
+        html body.interior.big #container section#goToBig ul, html body.interior.big #container section#goToDeals ul {
+          list-style: none;
+          color: #fff; }
+          html body.interior.big #container section#goToBig ul li, html body.interior.big #container section#goToDeals ul li {
+            margin-bottom: 10px; }
+            html body.interior.big #container section#goToBig ul li a, html body.interior.big #container section#goToDeals ul li a {
+              text-align: left;
+              padding: 10px; }
+              html body.interior.big #container section#goToBig ul li a span, html body.interior.big #container section#goToDeals ul li a span {
+                float: right;
+                display: inline-block; }
+                html body.interior.big #container section#goToBig ul li a span:hover, html body.interior.big #container section#goToDeals ul li a span:hover {
+                  color: #c6d7e7; }
+      html body.interior.big #container section#goToBig.client {
+        float: none;
+        margin: 20px auto 0; }
+      html body.interior.big #container form#create-account-form {
+        width: 380px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #EDEDED;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 6px; }
+        html body.interior.big #container form#create-account-form legend {
+          width: 100%; }
+        html body.interior.big #container form#create-account-form input[type=submit] {
+          background-color: #2f648e;
+          color: #fff;
+          font-size: 14px;
+          font-family: "Open Sans", Arial, Helvetica, sans-serif;
+          border: none;
+          border-top: 1px solid #2f648e;
+          border-left: 1px solid #2f648e;
+          border-radius: 4px;
+          padding: 3px 8px; }
+          html body.interior.big #container form#create-account-form input[type=submit]:hover {
+            background-color: #fff;
+            color: #2f648e;
+            cursor: pointer;
+            border-top: 1px solid #bbb;
+            border-left: 1px solid #bbb; }
+    html body.interior.big p {
+      color: #fff;
+      font-size: 16px; }
+    html body.interior.big footer {
+      background-color: #ededed;
+      clear: both;
+      color: #444444;
+      font-size: 12px;
+      padding: 15px 25px;
+      line-height: 24px; }
+
+  #dashboard #shell {
+    width: 50%;
+    margin: 0 auto; }
+
+  /* ====================================  H O M E P A G E  ======================== */
+  #homepage h1 {
+    position: relative;
+    text-indent: -9999px; }
+  #homepage #container {
+    background: none; }
+  #homepage #content {
+    overflow: hidden;
+    position: relative;
+    background: url("/lib/img/background_images/homepagebg-lg.jpg") 0 30% no-repeat #70A2DD;
+    background-size: cover;
+    z-index: 1;
+    top: -35px;
+    padding-top: 35px;
+    padding-bottom: 20px; }
+    #homepage #content aside {
+      float: right;
+      height: 460px;
+      color: #fff;
+      width: 27%;
+      margin-right: 6%;
+      margin-bottom: .75%;
+      background-color: #101920;
+      background-color: rgba(16, 25, 32, 0.6); }
+      #homepage #content aside #whiteSIPC {
+        text-align: center; }
+        #homepage #content aside #whiteSIPC img {
+          margin: 0 20px 5px; }
+      #homepage #content aside h2.asidetexthead {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        padding: 3% 3% 0; }
+      #homepage #content aside hr {
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+        background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+        background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+        background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent); }
+      #homepage #content aside #newsticker {
+        height: 100px;
+        display: block; }
+        #homepage #content aside #newsticker li {
+          display: none; }
+          #homepage #content aside #newsticker li.show {
+            display: block; }
+      #homepage #content aside h2 {
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 10px; }
+      #homepage #content aside > p, #homepage #content aside figure, #homepage #content aside section {
+        padding: 3%; }
+      #homepage #content aside figure {
+        background-color: #101920;
+        background-color: rgba(16, 25, 32, 0.8); }
+        #homepage #content aside figure img {
+          margin-bottom: 10px; }
+      #homepage #content aside #randNewsItems li {
+        margin-bottom: 10px; }
+      #homepage #content aside #randNewsItems li:nth-last-child(1) {
+        margin-bottom: 0px; }
+      #homepage #content aside #randNewsItems h2 {
+        font-weight: bold; }
+      #homepage #content aside #randNewsItems h3 {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 16px; }
+  #homepage .introtext {
+    color: #fff;
+    background-color: #101920;
+    background-color: rgba(16, 25, 32, 0.6);
+    font-size: 16px;
+    margin: 0 6%;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: .1px;
+    margin-bottom: .75%; }
+  #homepage #sipcMember {
+    height: 0px;
+    padding: 0;
+    border: none; }
+    #homepage #sipcMember aside {
+      display: none; }
+
+  #focalPoints {
+    margin-left: 6%;
+    overflow: hidden;
+    width: 61%;
+    margin-bottom: .75%;
+    position: absolute;
+    bottom: 20px; }
+    #focalPoints li {
+      margin-right: 1%;
+      padding: 1%;
+      float: left;
+      list-style: none;
+      width: 22%;
+      background-color: #101920;
+      background-color: rgba(16, 25, 32, 0.6);
+      height: 95px;
+      text-align: center;
+      display: table;
+      table-layout: fixed; }
+    #focalPoints span {
+      color: #fff;
+      font-family: "Blair", Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      display: table-cell;
+      vertical-align: middle; }
+    #focalPoints span#counterparty, #focalPoints span#clientstxt {
+      display: inline; }
+    #focalPoints span#counterparty {
+      display: none; }
+    #focalPoints span.logo {
+      text-align: center;
+      display: table-cell;
+      width: 100%;
+      height: 100%; }
+      #focalPoints span.logo img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto; }
+    #focalPoints #topclients.slideheader span:after {
+      content: ':'; }
+
+  /* ====================================  A B O U T   U S   P A G E  ======================== */
+  #aboutus #container {
+    background: none; }
+  #aboutus #content {
+    margin-top: 0; }
+    #aboutus #content p {
+      text-align: left;
+      width: 50%;
+      float: left;
+      margin-right: 0; }
+    #aboutus #content .aboutusp {
+      width: 50%;
+      float: left;
+      margin-right: 0; }
+    #aboutus #content h1 {
+      margin-bottom: 30px; }
+    #aboutus #content h2 {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      text-align: left;
+      float: left;
+      margin-left: 6%; }
+    #aboutus #content ul {
+      margin-left: 6%;
+      width: 50%;
+      float: left; }
+      #aboutus #content ul li {
+        background-color: #777;
+        list-style: none;
+        padding: 8px 15px;
+        margin-bottom: 5px;
+        width: 360px; }
+  #aboutus #officelocation {
+    width: 35%;
+    max-width: 500px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 6%;
+    margin-bottom: 20px; }
+    #aboutus #officelocation img {
+      width: 100%; }
+    #aboutus #officelocation figcaption {
+      text-align: center;
+      padding-top: 5px; }
+
+  /* ====================================  A I R L I N E S  &  I S S U E R S  ======================== */
+  #issuers {
+    background: url("/lib/img/background_images/sky.jpg") repeat; }
+    /* #issuers #container {
+      background: none; } */
+    #issuers h1 {
+      /* margin-bottom: 20px;  */
+      margin-top: -35px;
+      position: relative;
+      z-index: 15; }
+      #issuers h1 span {
+        padding: 10px 0;
+        display: block;
+        background-color: rgba(16, 25, 32, 0.6);
+        color: white; }
+    #issuers #content {
+      color: white; }
+      #issuers #content sup a {
+        text-decoration: none; }
+      #issuers #content #intro {
+        margin-top: 36px; }
+        #issuers #content #intro figure {
+          text-align: center;
+          padding-top: 30px; }
+          #issuers #content #intro figure img {
+            width: 35%; }
+          #issuers #content #intro figure figcaption {
+            position: absolute;
+            left: -9999px; }
+        #issuers #content #intro #iatapartner {
+          margin-bottom: 20px; }
+      #issuers #content #slider {
+        width: 800px;
+        overflow: hidden;
+        position: relative;
+        margin: 20px auto; }
+        #issuers #content #slider:before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0; }
+        #issuers #content #slider div {
+          padding: 20px 0;
+          position: relative;
+          z-index: 2;
+          float: left;
+          background-color: #101920;
+          background-color: rgba(16, 25, 32, 0.6); }
+          #issuers #content #slider div#placements {
+            margin-right: 20px;
+            height: 315px; }
+          #issuers #content #slider div#transfeatures {
+            margin-left: 0;
+            height: 315px;
+            padding-right: 20px; }
+          #issuers #content #slider div h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #eee;
+            position: relative;
+            z-index: 2; }
+          #issuers #content #slider div ul {
+            padding: 5px 0 5px 40px;
+            min-height: 144px;
+            position: relative;
+            background-color: transparent;
+            z-index: 2; }
+            #issuers #content #slider div ul li {
+              padding: 5px 5px 5px 0;
+              background-color: transparent;
+              color: #699DCC; }
+      #issuers #content hr {
+        margin: 20px 6% 0;
+        color: #ddd; }
+      #issuers #content .clear {
+        margin-bottom: 20px; }
+      #issuers #content ol.notes {
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 6%;
+        padding-left: calc( 6% + 16px);
+        width: 760px;
+        float: right;
+        clear: right;
+        padding-top: 20px;
+        background-color: white;
+        color: #6A737B;
+        list-style: none;
+        font-size: 11px; }
+    #issuers #sipcMember {
+      display: none; }
+
+  /* ====================================  I N V E S T O R S  ======================== */
+  /* #investors #container {
+    background: none; } */
+  #investors h1 {
+    /* margin-bottom: 20px;  */
+    margin-top: -35px;
+    position: relative;
+    z-index: 15; }
+    #investors h1 span {
+      padding: 10px 0;
+      display: block;
+      background-color: rgba(16, 25, 32, 0.6);
+      color: white; }
+  #investors #content {
+    color: white; }
+    #investors #content sup a {
+      text-decoration: none; }
+    #investors #content #intro {
+      margin-top: 36px; }
+    #investors #content #slider {
+      width: 800px;
+      overflow: hidden;
+      position: relative;
+      margin: 40px auto 0px; }
+      #investors #content #slider:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0; }
+      #investors #content #slider div {
+        width: 380px;
+        padding: 20px 0;
+        position: relative;
+        z-index: 2;
+        background-color: #101920;
+        background-color: rgba(16, 25, 32, 0.6);
+        float: left; }
+        #investors #content #slider div#placements {
+          margin-right: 20px; }
+        #investors #content #slider div#transfeatures {
+          margin-left: 0; }
+        #investors #content #slider div h2 {
+          margin-bottom: 20px;
+          text-align: center;
+          font-weight: bold;
+          color: #eee;
+          position: relative;
+          z-index: 2; }
+        #investors #content #slider div ul {
+          padding: 5px 0 5px 40px;
+          min-height: 144px;
+          position: relative;
+          background-color: transparent;
+          z-index: 2; }
+          #investors #content #slider div ul li {
+            padding: 5px 0;
+            background-color: transparent;
+            color: #699DCC; }
+    #investors #content hr {
+      margin: 20px 6% 0;
+      color: #ddd; }
+    #investors #content .clear {
+      margin-bottom: 20px; }
+    #investors #content ol.notes {
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 6%;
+      padding-left: calc(6% + 16px);
+      width: 760px;
+      float: right;
+      clear: right;
+      padding-top: 20px;
+      background-color: white;
+      color: #6A737B;
+      list-style: none;
+      font-size: 11px; }
+  #investors #sipcMember {
+    display: none; }
+
+  /* ====================================  O U R  T E A M   P A G E  ======================== */
+  #team {
+    background: #63a5d2; }
+    #team #container {
+      background: none; }
+    #team h1 {
+      /* margin-bottom: 20px;  */
+      margin-top: -35px;
+      position: relative;
+      z-index: 15; }
+      #team h1 span {
+        padding: 10px 0;
+        display: block;
+        background-color: rgba(16, 25, 32, 0.6);
+        color: white; }
+    #team #staffList {
+      overflow: hidden;
+      margin: 20px 6% 0; }
+      #team #staffList li {
+        width: 48%;
+        margin: 0 1%;
+        float: left;
+        margin-bottom: 30px;
+        overflow: hidden;
+        background-color: #101920;
+        background-color: rgba(16, 25, 32, 0.6); }
+        #team #staffList li h3 {
+          margin-top: 2%;
+          color: #8AB3D2; }
+        #team #staffList li h3, #team #staffList li h4 {
+          text-align: left; }
+        #team #staffList li h4 {
+          color: #8AB3D2; }
+        #team #staffList li p {
+          text-align: left;
+          margin-left: 2%;
+          margin-right: 2%; }
+      #team #staffList div {
+        width: 64%;
+        float: left; }
+        #team #staffList div p {
+          margin-left: 0; }
+        #team #staffList div a, #team #staffList div span.tel {
+          color: #7aabce; }
+      #team #staffList div.profileimg {
+        display: inline;
+        width: 30%;
+        float: left;
+        margin: 2% 2% 0; }
+        #team #staffList div.profileimg img {
+          width: 100%; }
+
+  /* ====================================  Log In  ====================================== */
+  #deals.interior {
+    background: #1E3445; }
+    #deals.interior #shell {
+      margin: 0 auto;
+      overflow: auto;
+      padding-top: 30px; }
+    #deals.interior #container {
+      background-color: rgba(16, 25, 32, 0.15); }
+    #deals.interior h1 {
+      margin-bottom: 20px;
+      margin-top: -35px;
+      position: absolute;
+      z-index: 15;
+      width: 100%;
+      left: 0;
+      top: 300px; }
+      #deals.interior h1 span {
+        padding: 10px 0;
+        display: block;
+        background-color: rgba(16, 25, 32, 0.6);
+        color: white; }
+    #deals.interior #content {
+      padding-top: 300px; }
+      #deals.interior #content #intro {
+        text-align: center;
+        margin: 0px; }
+      #deals.interior #content.widthsidebar {
+        width: 40%;
+        margin: 0; }
+    #deals.interior ul#dealsList li {
+      display: block;
+      width: 100%;
+      overflow: auto;
+      padding-top: 10px; }
+    #deals.interior ul#dealsList h3 {
+      color: #328ecc;
+      margin: 0px 6%;
+      font-size: 18px; }
+    #deals.interior ul#dealsList div {
+      width: 55%;
+      float: right;
+      text-align: center; }
+    #deals.interior ul#dealsList img {
+      width: 40%;
+      display: block;
+      float: left;
+      margin-left: 10px;
+      border: 1px solid #fff; }
+    #deals.interior aside#sidebar {
+      width: 50%;
+      height: 168px;
+      margin-top: 300px;
+      padding: 0 10px 0 0;
+      margin-bottom: 20px;
+      margin-right: 0;
+      background-color: rgba(16, 25, 32, 0.6);
+      text-align: center;
+      color: white; }
+      #deals.interior aside#sidebar h2 {
+        padding: 0;
+        margin-bottom: 30px;
+        color: white;
+        text-align: center; }
+      #deals.interior aside#sidebar h3 {
+        color: white; }
+    #deals.interior #loginform {
+      margin: 30px auto 30px;
+      width: 50%; }
+      #deals.interior #loginform input {
+        display: block;
+        width: 100%;
+        margin: 0 auto; }
+      #deals.interior #loginform input#loginsubmit {
+        width: 30%;
+        text-align: center;
+        line-height: 36px;
+        }
+
+  /* ====================================  C L I E N T S  ============================= */
+  #clients #container {
+    background: url("/lib/img/background_images/clients_large.jpg") right 84px no-repeat;
+    background-size: 100%; }
+  #clients h2 {
+    margin: 40px 0; }
+  #clients .clientList {
+    text-align: center; }
+    #clients .clientList li {
+      width: 10.5%;
+      padding: 1%;
+      float: none;
+      display: inline-block; }
+
+  /* ====================================  N E W S   P A G E S  =========================== */
+  #news #container {
+    background: none; }
+  #news h1 {
+    /* margin-bottom: 20px;  */
+    margin-top: -35px;
+    position: relative;
+    z-index: 15; }
+    #news h1 span {
+      padding: 10px 0;
+      display: block;
+      background-color: rgba(16, 25, 32, 0.6);
+      color: white; }
+  #news #content h2 {
+    text-align: left;
+    font-size: 16px;
+    color: #328ecc; }
+  #news #content p {
+    margin-left: 0; }
+  #news #content a {
+    display: block;
+    color: #7CA6D0;
+    padding: 0;
+    background-color: transparent; }
+    #news #content a:hover {
+      color: #fff; }
+  #news #content .ignore-list, #news #content .article-header {
+    color: #fff;
+    font-family: "Blair", Arial, Helvetica, sans-serif;
+    font-size: 26px; }
+  #news #content .article-header {
+    width: 51%;
+    float: right;
+    margin-top: 3%; }
+  #news .eventList li {
+    margin-bottom: 20px;
+    padding-top: 15px; }
+  #news .eventList li:nth-child(odd) {
+    background-color: #fff; }
+  #news .eventList h3 {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 6%;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+  #news #ticker {
+    margin: 40px 0;
+    list-style: none;
+    overflow: auto; }
+    #news #ticker h2 {
+      background: url("/lib/img/background_images/cloudh2bg2.jpg") center center no-repeat transparent;
+      color: white;
+      text-align: center; }
+      #news #ticker h2 span {
+        background-color: rgba(16, 25, 32, 0.6);
+        display: block;
+        height: 100%;
+        padding: 20px; }
+    #news #ticker h3 {
+      margin-bottom: 10px; }
+    #news #ticker article {
+      display: none;
+      margin-bottom: 10px; }
+    #news #ticker li {
+      background-color: white;
+      width: 25.33%;
+      float: left;
+      margin-left: 6%;
+      margin-bottom: 20px;
+      height: 215px; }
+      #news #ticker li a.askQuestion {
+        margin-top: 20px;
+        margin-left: 20px; }
+      #news #ticker li p {
+        margin-left: 20px; }
+      #news #ticker li h3 {
+        margin: 10px 20px 0; }
+        #news #ticker li h3 .readmore {
+          margin-left: 10px;
+          position: relative;
+          top: 3px; }
+      #news #ticker li article {
+        margin-left: 20px; }
+        #news #ticker li article p {
+          margin-left: 0; }
+  #news .newsList {
+    margin-top: 2%; }
+  #news #articleList {
+    float: right;
+    width: 45%;
+    margin-top: .75%; }
+    #news #articleList h3 {
+      color: #fff;
+      font-family: "Blair", Arial, Helvetica, sans-serif; }
+  #news #newsList {
+    margin-left: 6%;
+    width: 35%;
+    float: left;
+    background-color: rgba(16, 25, 32, 0.6);
+    padding: .5% 2%; }
+    #news #newsList h2
+    span {
+      float: right; }
+    #news #newsList li {
+      overflow: hidden;
+      display: block;
+      border-bottom: 1px solid #4A5865;
+      padding: 15px 0; }
+    #news #newsList .article div {
+      display: table-cell; }
+      #news #newsList .article div span {
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        color: #2f648e;
+        font-size: 14px;
+        display: inline-block; }
+        #news #newsList .article div span:hover {
+          color: #fff;
+          cursor: pointer; }
+    #news #newsList span {
+      font-family: "Blair", Arial, Helvetica, sans-serif;
+      color: #c6d7e7;
+      font-size: 16px; }
+    #news #newsList span.newsDate {
+      width: 200px; }
+    #news #newsList span.newsPrice {
+      width: 150px; }
+    #news #newsList p {
+      display: table-cell; }
+    #news #newsList h3 {
+      font-family: "Blair", Arial, Helvetica, sans-serif;
+      color: #eee; }
+    #news #newsList a {
+      width: 185px; }
+    #news #newsList article {
+      color: #fff;
+      margin-bottom: 10px; }
+      #news #newsList article p {
+        display: block; }
+  #news #articleList {
+    margin-right: 6%; }
+  #news aside#sidebar {
+    text-align: center;
+    margin-top: 364px; }
+    #news aside#sidebar span#explain {
+      font-size: 12px;
+      text-align: left;
+      line-height: 18px; }
+    #news aside#sidebar #formreset {
+      margin-top: 5px; }
+    #news aside#sidebar ul {
+      margin-top: 10px; }
+    #news aside#sidebar li {
+      list-style: none;
+      display: inline-block;
+      margin: 1%; }
+      #news aside#sidebar li a {
+        border: 1px solid #ddd;
+        background-color: #fff;
+        display: block;
+        text-decoration: none;
+        padding: 8px 10px; }
+        #news aside#sidebar li a:hover {
+          background-color: #2f648e;
+          color: #fff;
+          border: 1px solid #2f648e; }
+  #news aside#sidebar.fixed {
+    position: fixed;
+    top: 0;
+    float: none;
+    margin-top: 40px; }
+
+  /* ====================================  C O N T A C T   U S   P A G E  ======================== */
+  #contact #headerwrapper {
+    background-color: #fff; }
+  #contact #content {
+    overflow: hidden;
+    padding: 0 6%;
+    background: url("/lib/img/background_images/eastcoast2.jpg") no-repeat scroll left 0/auto 100% #9FC2FF; }
+    #contact #content #mapInset {
+      background: url("/lib/img/background_images/greenwich_300.gif") no-repeat scroll left top #9FC2FF;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+      left: 6%;
+      top: 50%;
+      margin-top: -150px;
+      border: 1px solid #72756E; }
+      #contact #content #mapInset a {
+        display: block;
+        height: 100%;
+        width: 100%; }
+        #contact #content #mapInset a span {
+          display: none; }
+        #contact #content #mapInset a:hover span {
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white; }
+  #contact #contactInfo {
+    background-color: #5c666f;
+    background-color: rgba(92, 102, 111, 0.8);
+    color: #fff;
+    padding: 2%;
+    padding-bottom: 1%;
+    width: 40%;
+    float: right;
+    margin-top: 5%;
+    max-width: 465px;
+    min-width: 420px; }
+    #contact #contactInfo dl {
+      padding: 0;
+      margin-top: 65px;
+      line-height: 20px; }
+      #contact #contactInfo dl a {
+        color: #A6CFE6; }
+    #contact #contactInfo h2 {
+      font-size: 16px;
+      margin-bottom: 24px; }
+  #contact .vcard {
+    position: relative; }
+    #contact .vcard a {
+      color: #A6CFE6; }
+    #contact .vcard .addr {
+      min-height: 120px; }
+    #contact .vcard #localtime {
+      width: 40%;
+      margin-left: 5%;
+      position: absolute;
+      right: 0;
+      top: -20px;
+      text-align: center; }
+      #contact .vcard #localtime p {
+        margin-bottom: 5px; }
+    #contact .vcard p {
+      line-height: 20px; }
+    #contact .vcard #directphone {
+      clear: both; }
+  #contact h1 {
+    position: absolute;
+    text-indent: -9999px; }
+  #contact h2 {
+    font-family: "Blair", Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase; }
+  #contact #contactDirections {
+    clear: both;
+    margin-bottom: 5%;
+    background-color: #101920;
+    background-color: rgba(16, 25, 32, 0.7);
+    padding: 1.5% 2%;
+    width: 40%;
+    float: right;
+    max-width: 465px;
+    min-width: 420px;
+    color: white; }
+    #contact #contactDirections a {
+      color: #fff;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+    #contact #contactDirections #dwnldDirections {
+      float: right; }
+  #contact #drivingSection {
+    background-color: #fff;
+    color: #000;
+    padding: 0 6%;
+    overflow: hidden; }
+    #contact #drivingSection h2 {
+      color: #328ecc;
+      text-align: center;
+      padding: 40px 0 25px; }
+    #contact #drivingSection img {
+      margin-left: 20%;
+      width: 29%;
+      max-width: 250px;
+      margin-bottom: 40px;
+      float: left; }
+    #contact #drivingSection #directionsFrom {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      margin-top: 60px; }
+
+  /* ==================================== F I N A N C I A L  S T R E N G T H  =========================== */
+  #financialstrength.interior {
+    background: #0A0F13;
+    width: 100%;
+    overflow-x: hidden; }
+    #financialstrength.interior #container {
+      background-color: #000; }
+    #financialstrength.interior h1 {
+      /* margin-bottom: 20px;  */
+      margin-top: -35px;
+      position: relative;
+      z-index: 15; }
+      #financialstrength.interior h1 span {
+        padding: 10px 0;
+        display: block;
+        background-color: rgba(16, 25, 32, 0.6);
+        color: white; }
+    #financialstrength.interior figure {
+      float: right;
+      margin-right: 6%;
+      margin-left: 20px;
+      margin-bottom: 20px; }
+      #financialstrength.interior figure figcaption {
+        text-align: center; }
+    #financialstrength.interior #content #finra {
+      margin: 0;
+      padding: 40px 6%;
+      text-align: center;
+      font-size: 18px; }
+      #financialstrength.interior #content #finra a {
+        color: #40A1DD;
+        font-size: 22px;
+        margin-left: 10px; }
+    #financialstrength.interior #content:before {
+      content: '';
+      display: block;
+      height: 300px;
+      width: 100%;
+      position: relative;
+      left: 0;
+      top: -35px;
+      background: url("/lib/img/background_images/pumpjacks2/2500x300_96dpi.jpg") left center no-repeat #ccc;
+      background-size: cover;
+      z-index: 1;
+      background-position: center bottom; }
+    #financialstrength.interior #content video {
+      height: 300px;
+      left: 50%;
+      margin-left: -1250px;
+      position: absolute;
+      top: -35px;
+      z-index: 2; }
+
+  /* ==================================== T E R M S  O F  S E R V I C E  =========================== */
+  #terms {
+    background: url("/lib/img/background_images/clouds_large.jpg") no-repeat scroll left center/cover #ccc;
+    text-align: center; }
+    #terms #content p {
+      margin-bottom: 20px;
+      text-align: left; }
+    #terms ul {
+      margin-left: 6%;
+      margin-right: 6%;
+      margin-bottom: 20px;
+      padding-left: 40px; }
+    #terms li {
+      color: white;
+      text-align: left; }
+
+  /* ==================================== P R I V A C Y  =========================== */
+  #privacy {
+    background: url("/lib/img/background_images/clouds_large.jpg") no-repeat scroll left center/cover #ccc;
+    text-align: center; }
+    #privacy #content p {
+      margin-bottom: 20px;
+      text-align: left; }
+    #privacy ul {
+      margin-left: 6%;
+      margin-right: 6%;
+      margin-bottom: 20px;
+      padding-left: 40px; }
+    #privacy table {
+      margin-left: 6%;
+      margin-right: 6%;
+      margin-bottom: 20px;
+      width: 80%;
+      text-align: left;
+      color: white; }
+      #privacy table td {
+        padding: 5px; }
+    #privacy li {
+      color: white;
+      text-align: left; }
+
+  /* ==================================== P A G E  N O T  F O U N D  =========================== */
+  #pagenotfound {
+    background: url("/lib/img/background_images/clouds_large.jpg") no-repeat scroll left center/cover #ccc;
+    text-align: center; }
+    #pagenotfound #content p {
+      margin-bottom: 40px; }
+
+  /* ====================================  footer  ================================ */
+  #sipcMember {
+    background-color: white;
+    color: #000;
+    border-top: 3px double #6a737b;
+    border-bottom: 3px double #6a737b; }
+
+  #footerWrapper {
+    background-color: #fff;
+    text-align: left;
+    clear: both; } }
+/* == end 800px+ media query == */
+/* ================================================  T A B L E T  O N L Y  ==========================*/
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  #homepage #container {
+    background-size: contain; }
+
+  a#mainlogo {
+    float: left;
+    width: 425px; }
+    a#mainlogo img {
+      width: 100%;
+      max-width: 425px;
+      display: block; }
+
+  dl#headerContact {
+    font-size: 11px;
+    line-height: 14px; }
+
+  #focalPoints {
+    margin-bottom: 0; }
+    #focalPoints li {
+      width: 47%;
+      height: 95px;
+      margin-bottom: 1%; }
+
+  /* ====================================  N A V I G A T I O N   =============================================*/
+  nav#mainnav ul {
+    width: 89%; }
+    nav#mainnav ul a, nav#mainnav ul span {
+      padding: 10px 19px; }
+
+  /* ====================================  D E A L S  =============================================*/
+  #deals aside#sidebar h2 {
+    font-size: 18px; }
+
+  /* ====================================  O U R  T E A M  P A G E  ======================== */
+  #team #content:before {
+    content: '';
+    display: block;
+    height: 366px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/787_tablet.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center center; }
+  #team #staffList li {
+    width: 45%; }
+
+  /* ====================================  A B O U T   U S   P A G E  ======================== */
+  #aboutus #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/train_tablet2.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center bottom; }
+
+  /* ====================================  A I R L I N E S  &  I S S U E R S  ======================== */
+  #issuers #content:before {
+    content: '';
+    display: block;
+    height: 366px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/issuersbg-lg.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center center; }
+  #issuers #content div#intro figure {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    #issuers #content div#intro figure img {
+      width: 15%; }
+  #issuers #content div h2 {
+    height: 48px; }
+  #issuers #content div ul {
+    padding-left: 25px; }
+
+  /* ====================================  I N V E S T O R S  ======================== */
+  #investors #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/cargo5_tablet.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; }
+  #investors #content div h2 {
+    height: 48px; }
+  #investors #content div ul {
+    padding-left: 25px; }
+
+  /* ====================================  O P P O R T U N I T I E S  ====================================== */
+  #deals #shell {
+    width: 800px; }
+    #deals #shell aside#sidebar {
+      width: 55%; }
+    #deals #shell img {
+      margin-top: 12px;
+      width: 42%; }
+  #deals #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/trainyard_tablet.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; }
+
+  /* ====================================  C L I E N T S  ============================= */
+  #clients #container {
+    background: url("/lib/img/background_images/clients_large.jpg") right 76px no-repeat; }
+  #clients .clientList li {
+    width: 18%;
+    padding: 1%; }
+
+  /* ====================================  N E W S  ======================== */
+  #news #content:before {
+    content: '';
+    display: block;
+    height: 366px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/cargo3_tablet.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center bottom; }
+  #news #ticker li {
+    height: 240px; }
+
+  /* ====================================  T E R M S  O F  S E R V I C E  ====================================== */
+  #terms #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/clouds_tablet.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; }
+
+  /* ====================================  P R I V A C Y  ====================================== */
+  #privacy #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/clouds_tablet.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; }
+
+  /* ====================================  P A G E  N O T  F O U N D  ====================================== */
+  #pagenotfound #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/clouds_tablet.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; }
+
+  /* ====================================  C O N T A C T   U S   P A G E  ======================== */
+  #contact #container {
+    background: url("/lib/img/Burnham_location_large.jpg") no-repeat scroll center 76px; }
+  #contact #content {
+    background: url("/lib/img/background_images/eastcoast.jpg") no-repeat scroll center 0/auto 100% #9FC2FF; } }
+@media only screen and (min-width: 800px) and (max-width: 1024px) and (min-width: 800px) and (max-width: 860px) {
+  #contact .vcard #localtime {
+    display: none; }
+  #contact #contactInfo, #contact #contactDirections {
+    width: 300px;
+    min-width: inherit; } }
+
+/* == end 800px only media query == */
+/* ================================================  D E S K T O P  O N L Y  ==========================*/
+@media only screen and (min-width: 1024px) {
+  /* ====================================  N A V I G A T I O N  ======================== */ }
+@media only screen and (min-width: 1024px) and (min-width: 1280px) and (max-width: 1439px) {
+  nav#mainnav > ul {
+    margin: 0 auto;
+    width: 88%; }
+  nav#mainnav li ul#aboutSubnav {
+    display: inline-block;
+    position: static; }
+    nav#mainnav li ul#aboutSubnav li {
+      background-color: transparent;
+      float: left;
+      border-top: none; }
+  nav#mainnav li #aboutSubnav {
+    /* width: 360px; */
+    width: 225px; }
+  nav#mainnav span#aboutus {
+    display: none; } }
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  nav#mainnav {
+    clear: both; }
+    nav#mainnav > ul {
+      margin: 0 auto;
+      width: 88%; }
+    nav#mainnav li ul {
+      display: inline-block;
+      position: static; }
+      nav#mainnav li ul li {
+        background-color: transparent;
+        float: left;
+        border-top: none; }
+    nav#mainnav li #productsSubnav {
+      width: 275px; }
+    .wrapper-ja nav#mainnav li #productsSubnav {
+      width: 425px; } 
+    nav#mainnav li #aboutSubnav {
+      width: 220px; }
+    nav#mainnav span {
+      display: none; } }
+@media only screen and (min-width: 1024px) {
+  /* ====================================  H O M E P A G E  ======================== */ }
+@media only screen and (min-width: 1024px) and (max-width: 1100px) {
+  #focalPoints span#counterparty {
+    font-size: 12px; } }
+@media only screen and (min-width: 1024px) and (min-width: 1101px) and (max-width: 1200px) {
+  #focalPoints span#counterparty {
+    font-size: 13px; } }
+@media only screen and (min-width: 1024px) and (min-width: 1201px) and (max-width: 1350px) {
+  #focalPoints span#counterparty {
+    font-size: 14px; } }
+@media only screen and (min-width: 1024px) {
+  /* ====================================  A B O U T   U S   P A G E  ======================== */
+  #aboutus #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/train_large2.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center bottom; }
+
+  /* ====================================  A I R L I N E S  &  I S S U E R S  ======================== */
+  #issuers #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/issuersbg-lg.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center center; } }
+@media only screen and (min-width: 1024px) and (min-width: 800px) and (max-width: 1274px) {
+  #issuers #content #intro figure {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    #issuers #content #intro figure img {
+      width: 15%; }
+    #issuers #content #intro figure figcaption {
+      position: absolute;
+      left: -9999px; } }
+@media only screen and (min-width: 1024px) and (min-width: 1275px) {
+  #issuers #content #intro {
+    float: left;
+    width: calc(88% - 820px);
+    margin-right: 0;
+    margin-top: 36px;
+    margin-left: 6%; }
+    #issuers #content #intro p {
+      margin-left: 0;
+      margin-right: 0; }
+    #issuers #content #intro figure {
+      text-align: center;
+      padding-top: 30px; }
+      #issuers #content #intro figure img {
+        width: 35%;
+        max-width: 250px; }
+      #issuers #content #intro figure figcaption {
+        position: absolute;
+        left: -9999px; }
+  #issuers #content #slider {
+    float: right;
+    margin-right: 6%;
+    margin-top: 20px; } }
+@media only screen and (min-width: 1024px) {
+  #issuers #content ol.notes {
+    float: none;
+    clear: both;
+    padding-top: 20px;
+    border-top: 3px double #6a737b;
+    border-bottom: 3px double #6a737b;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 20px;
+    width: auto;
+    -moz-padding-left: calc(88% - 715px);
+    -webkit-padding-left: calc(88% - 715px);
+    -o-padding-left: calc(88% - 715px);
+    padding-left: calc(88% - 715px);
+    overflow: auto;
+    list-style: none; }
+    #issuers #content ol.notes li {
+      width: 300px;
+      float: left;
+      padding-left: 40px;
+      text-indent: -16px; }
+      #issuers #content ol.notes li:nth-child(3) {
+        clear: left; }
+      #issuers #content ol.notes li:nth-child(even) {
+        margin-left: 60px; }
+
+  /* ====================================  I N V E S T O R S  ======================== */
+  #investors #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/cargo5_large.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; } }
+@media only screen and (min-width: 1024px) and (min-width: 1275px) {
+  #investors #content #intro {
+    float: left;
+    width: calc(88% - 820px);
+    margin-right: 0;
+    margin-top: 36px;
+    margin-left: 6%; }
+  #investors #content #slider {
+    float: right;
+    margin-right: 6%;
+    margin-top: 20px; } }
+@media only screen and (min-width: 1024px) {
+  #investors #content ol.notes {
+    float: none;
+    clear: both;
+    padding-top: 20px;
+    border-top: 3px double #6a737b;
+    border-bottom: 3px double #6a737b;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 20px;
+    width: auto;
+    padding-left: calc(94% - 790px);
+    padding-left: calc(88% - 715px);
+    overflow: auto;
+    background: url("/lib/img/sipc_logo.svg") calc(47% - 370px) center no-repeat white;
+    list-style: none; }
+    #investors #content ol.notes li {
+      width: 300px;
+      float: left;
+      padding-left: 40px;
+      text-indent: -16px; }
+      #investors #content ol.notes li:first-child {
+        margin-bottom: 10px; }
+
+  /* ====================================  O U R  T E A M  P A G E  ======================== */
+  #team #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/787_large.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center center; }
+
+  /* ====================================  O P P O R T U N I T I E S  ====================================== */
+  #deals #shell {
+    width: 1000px; }
+  #deals #content {
+    padding-top: 300px; }
+    #deals #content:before {
+      content: '';
+      display: block;
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: -35px;
+      background: url("/lib/img/background_images/trainyard_large.jpg") left center no-repeat #ccc;
+      background-size: cover;
+      z-index: 1; }
+    #deals #content h1 {
+      top: 300px; }
+  #deals aside#sidebar {
+    margin-top: 346px; }
+
+  /* ====================================  N E W S  ======================== */
+  #news #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/cargo3_large_v2.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center bottom; }
+
+  /* ==================================== F I N A N C I A L  S T R E N G T H  =========================== */
+  /* ====================================  C O N T A C T   U S   P A G E  ======================== */
+  #contact #contactInfo {
+    background: url("/lib/img/BurnhamOffice_200.jpg") left bottom no-repeat rgba(92, 102, 111, 0.8);
+    background-position: calc(8%) calc(100% - 10px); }
+    #contact #contactInfo dl {
+      margin-left: 210px; }
+
+  /* ====================================  T E R M S  O F  S E R V I C E  ====================================== */
+  #terms #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/clouds_large.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; }
+
+  /* ====================================  P R I V A C Y  ====================================== */
+  #privacy #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/clouds_large.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; }
+
+  /* ====================================  P A G E  N O T  F O U N D  ====================================== */
+  #pagenotfound #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/clouds_large.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; } }
+/* == end 1024px only media query == */
+/* ================================================  D E S K T O P  O N L Y  ==========================*/
+@media only screen and (min-width: 1024px) and (max-width: 1650px) {
+  /* ====================================  A I R L I N E S  &  I S S U E R S  ======================== */
+  #homepage #content {
+    background: url("/lib/img/background_images/homepagebg-lg.jpg") no-repeat scroll 0 30%/cover #70a2dd; }
+
+  /* ====================================  A I R L I N E S  &  I S S U E R S  ======================== */
+  #issuers #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/issuersbg-lg.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center center; }
+
+  /* ====================================  I N V E S T O R S  ======================== */
+  #investors #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/cargo5_large_lap.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; }
+
+  /* ====================================  O U R  T E A M  P A G E  ======================== */
+  #team #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/787_large_lap.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center center; }
+
+  /* ====================================  O P P O R T U N I T I E S  ====================================== */
+  #deals #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/trainyard_large_lap.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; }
+
+  /* ====================================  N E W S  ======================== */
+  #news #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/cargo3_large_v2_lap.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1;
+    background-position: center bottom; }
+
+  /* ====================================  P A G E  N O T  F O U N D  ====================================== */
+  #pagenotfound #content:before {
+    content: '';
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -35px;
+    background: url("/lib/img/background_images/clouds_large.jpg") left center no-repeat #ccc;
+    background-size: cover;
+    z-index: 1; } }
+/* == end 1024px only media query == */
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,49 @@
+# dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env.local
+.env.*.local
+
+# vercel
+.vercel
+
+# jetbrains
+/.idea/
+
+# auto-generated sitemap and robots.txt
+public/sitemap.xml
+public/robots.txt
+
+# files built into the public folder
+public/rv-storybook
+public/css/embed.css
+public/media
+
+# built data files
+data/greenhouse
+
+# Local Netlify folder
+.netlify
