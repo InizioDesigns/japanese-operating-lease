@@ -38,9 +38,9 @@ export default function Strength(props) {
                             <source src="/lib/img/background_images/pumpjacks3/V3_2500x300.mp4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
                             <source src="/lib/img/background_images/pumpjacks3/V3_2500x300.webmhd.webm" type='video/webm; codecs="vp8, vorbis"' />
                         </video>
-                        <h1><span>{title}</span></h1>
-                        <p>{p1}</p>
-                        <p>{p2a} <Link href="http://www.sec.gov" target="_blank">www.sec.gov</Link> {p2b}</p>
+                        <h1><span style={{padding: "20px 0"}}>{title}</span></h1>
+                        <p style={{paddingTop: "20px"}}>{p1}</p>
+                        <p style={{paddingBottom: "20px"}}>{p2a} <Link href="http://www.sec.gov" target="_blank">www.sec.gov</Link> {p2b}</p>
                     </section>
                 </section> 
 
