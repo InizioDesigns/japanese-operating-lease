@@ -14,7 +14,7 @@ export default function LanguageSwitcher() {
     <>
         {otherLocales.map((locale) => {
           const { pathname, query, asPath } = router
-          const label = locale === 'ja' ? 'Japanese' : 'English';
+          const label = locale === 'ja' ? '日本語' : 'English';
           const flag = locale === 'ja' ? japan : usa;
           const flagSrc = locale === 'ja' ? '/lib/img/japan-16.png' : '/lib/img/usa-16.png';
 
