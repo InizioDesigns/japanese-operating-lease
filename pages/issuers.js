@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import LanguageSwitcher from '../components/language-switcher'
@@ -41,6 +42,10 @@ export default function Issuers(props) {
     const { title, intro, listTitle, list } = issuersContent[locale];
     return (
         <div id="issuers" className="interior marketing">
+            <Head>
+                <title>{title}</title>
+            </Head>
+
             <div id="container">
                 <Header />
 

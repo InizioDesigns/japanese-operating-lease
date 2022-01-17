@@ -1,8 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
+import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import LanguageSwitcher from '../components/language-switcher'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
@@ -50,6 +49,9 @@ export default function TestPage(props) {
     const { hero, clients, access, placement, mgmt } = homeContent[locale];
     return (
         <div id="homepage" className="home marketing">
+            <Head>
+                <title>Babcock &amp; Brown</title>
+            </Head>
             <div id="container">
                 <Header />
 

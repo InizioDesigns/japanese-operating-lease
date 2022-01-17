@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import LanguageSwitcher from '../components/language-switcher'
@@ -69,6 +70,10 @@ export default function Investors(props) {
     const { title, intro, listTitle, list, list2Title, list2, sub } = investorsContent[locale];
     return (
         <div id="investors" className="interior marketing">
+            <Head>
+                <title>{title}</title>
+            </Head>
+
             <div id="container">
                 <Header />
                 <section id="maincontent">
