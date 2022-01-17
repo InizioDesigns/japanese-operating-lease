@@ -1,6 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import Script from 'next/script'
 import { useRouter } from 'next/router'
 import LanguageSwitcher from '../components/language-switcher'
 import Header from '../components/header'
@@ -85,7 +84,7 @@ export default function Contact(props) {
                         </section>
                     </section>
                 </section> 
-                <script src='/lib/js/coolclock.js'></script>
+                <Script src="/lib/js/coolclock.js"></Script>
                 <Footer />
             </div>
         </div>
