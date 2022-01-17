@@ -10,7 +10,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <link rel="icon" type="image/png" href="/lib/img/favicon.png" />
+          <meta name="google-site-verification" content="QW9cw1P_7U_NzC1FeWDQthnDFvnV1NJH8Db58wAjGOg" />
+        </Head>
         <body>
           <Main />
           <NextScript />

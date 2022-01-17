@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import LanguageSwitcher from '../components/language-switcher'
 import Header from '../components/header'
@@ -8,7 +8,7 @@ import Footer from '../components/footer'
 
 const strengthContent = {
     "en": {
-        title: "Issuers",
+        title: "Financial Strength",
         p1: "Babcock & Brown Securities is backed by committed multi-year payment streams, providing recurring contractual cash flow regardless of business conditions. From this foundation, we are able to focus on the long term needs and interests of our clients.",
         p2a: "As an SEC-registered broker-dealer and FINRA member, Babcock & Brown Securities is subject to certain net capital maintenance and financial reporting requirements. The firm's latest balance sheet is available at",
         p2b: ".",
@@ -28,6 +28,9 @@ export default function Strength(props) {
     return (
         <div id="financialstrength" className="interior marketing">
             <div id="container">
+                <Head>
+                    <title>{title}</title>
+                </Head>
                 <Header />
 
                 <section id="maincontent">

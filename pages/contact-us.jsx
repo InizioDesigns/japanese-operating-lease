@@ -1,5 +1,6 @@
 import React from 'react'
 import Script from 'next/script'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import LanguageSwitcher from '../components/language-switcher'
 import Header from '../components/header'
@@ -50,6 +51,9 @@ export default function Contact(props) {
     const now = getTime();
     return (
         <div id="contact" className="interior marketing">
+            <Head>
+                <title>Contact Us</title>
+            </Head>
             <div id="container">
                 <Header />
 
