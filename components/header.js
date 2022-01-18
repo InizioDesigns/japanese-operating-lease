@@ -16,10 +16,10 @@ const navContent = {
     "ja": {
         direct: "米国 ダイレクト",
         home: "ホーム",
-        issuers: "商品/サービス 発行会社",
-        investors: "商品/サービス 投資家",
+        issuers: "発行会社のお客様/商品*サービス",
+        investors: "投資家のお客様/商品*サービス",
         strength: "弊社の 財務力",
-        contact: "コンタクト",
+        contact: "お問い合わせ",
     },
 };
 
