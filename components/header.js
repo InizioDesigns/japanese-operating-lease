@@ -67,6 +67,7 @@ export default function Header(props) {
                             </ul>
                         </li>
                         <li id="contactNav"><Link href="/contact-us" passHref>{contact}</Link></li>
+                        <li id="navLanguage" className="flagLink">{<LanguageSwitcher />}</li>
                     </ul>
                 </nav>
             </header>

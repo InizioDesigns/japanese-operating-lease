@@ -166,6 +166,10 @@ input, textarea {
 .flagLink img {
   margin-right: 4px;
 }
+nav#mainnav .flagLink a {
+  display: none;
+}
+
 #homepage #homeNav > a, #aboutus #aboutNav > a, #deals #dealsNav > a, #team #clientNav > a, #news #newsNav > a, #contact #contactNav > a {
   background-color: #101920; }
 
@@ -587,6 +591,13 @@ ol.notes {
 
   ol.notes li {
     list-style: none; }
+
+    nav#mainnav .flagLink a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
 
   /* ====================================  H O M E P A G E  ======================== */
   #homepage h1 {
