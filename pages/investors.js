@@ -38,22 +38,18 @@ const investorsContent = {
     "ja": {
         title: "投資家の皆さまへのメリット",
         intro: "Babcock & Brown証券は、新たな投資機会を調達するため、グローバルなリレーションシップを活用します。B&Bは取引のストラクチャリングを行い、適用されるデュー・デリジェンスを実施し、その後適切な投資家に対しそれらによる評価のために取引を提示します。B&Bは、投資家のポートフォリオに長期的に貢献する取引を提示することを、誇りとしています。",
-        listTitle: "B&Bの取引サンプル",
+        listTitle: "B&B過去の取引例",
         list: [
-          "米ドル投資適格及びハイ・イールド社債",
-          "5年から15年の期間のシニア社債",
-          "4年から10年の期間のメザニン社債",
+          "担保付き米ドル投資適格及びハイ・イールド社債",
+          "5年から15年満期の担保付き日本円建て社債",
+          "4年から10年満期の担保付き米ドルメザニン社債",
           "キッカー付きハイ・クーポンCAP債",
           "",
-          "リース資産（ホール・アセット投資, 及び日本型オペレーティングリース投資）",
+          "日本型オペレーティングリース",
         ],
-        list2Title: "典型的な取引の特徴",
+        list2Title: "投資家のお客様さまへのメリット",
         list2: [
-          "競争力あるイールド",
-          "モーゲージとアモタイゼーション",
-          "単一の発行会社又は多様なポートフォリオ",
-          "取引ごとに、単独による又は複数の投資家との投資",
-          "投資家要件に合致させるカスタマイゼーション",
+          "Babcock & Brown証券は、独自のグローバルリレーションシップと長年蓄積した高度なノウハウを活用し、お客様のニーズに合った商品の開発と組成を目的とし, 新たな投資機会のオリジネーション、ストラクチャーリング、デュー・デリジェンスサービスを提供しています。B&Bは、投資家のポートフォリオに長期的に貢献する取引を提示することを、誇りとしています。",
         ],
         sub: [
             "CAP債とは、設備の価値に基づくアップサイドを伴うBurnham私有の担保付債務である、コーポレート・アセット・プリファード（Corporate Asset Preferred）を意味します。",
@@ -92,17 +88,24 @@ export default function Investors(props) {
                                     <li>{list[5]}</li>
                                 </ul>
                             </div>
-                        
-                            <div id="transfeatures">
-                                <h2>{list2Title}</h2>
-                                <ul className="listbox">
-                                    <li>{list2[0]}</li>
-                                    <li>{list2[1]}</li>
-                                    <li>{list2[2]}</li>
-                                    <li>{list2[3]}<sup><a href="#note4">4</a></sup></li>
-                                    <li>{list2[4]}</li>
-                                </ul>
-                            </div>
+                            { locale === "en" ? (
+                                <div id="transfeatures">
+                                    <h2>{list2Title}</h2>
+                                    <ul className="listbox">
+                                        <li>{list2[0]}</li>
+                                        <li>{list2[1]}</li>
+                                        <li>{list2[2]}</li>
+                                        <li>{list2[3]}<sup><a href="#note4">4</a></sup></li>
+                                        <li>{list2[4]}</li>
+                                    </ul>
+                                </div>
+                            ) : (
+                                <div id="transfeatures">
+                                    <h2>{list2Title}</h2>
+                                    <p>{list2[0]}</p>
+=                                </div> 
+                            )}
+                            
                         </div>
                         <ol className="notes clear">
                             <li id="note1"><sup>1</sup> {sub[0]}</li>
