@@ -27,7 +27,7 @@ const homeContent = {
         },
         clients: "業界トップクラスのクライアント",
         access: "グローバル・アクセス",
-        placement: "負債、株式及びリースの取扱い", 
+        placement: "デット、株式及びリースの取扱い", 
         mgmt: "経験豊富なマネージメント・チーム",
     },
 };
