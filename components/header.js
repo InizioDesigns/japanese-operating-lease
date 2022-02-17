@@ -55,17 +55,10 @@ export default function Header(props) {
                 <nav id="mainnav" role="navigation">
                     <ul>
                         <li id="homeNav"><Link href="/" passHref>{home}</Link></li>
-                        <li id="productsNav" className="topnav"><span id="products">Products/Services</span>
-                            <ul id="productsSubnav" className="subnav">
-                                <li id="airlinesSubnav"><Link href="/issuers" passHref>{issuers}</Link></li>
-                                <li id="investorsSubnav"><Link href="/investors" passHref>{investors}</Link></li>
-                            </ul>
-                        </li>
-                        <li id="aboutNav" className="topnav"><span id="aboutus">About Us</span>
-                            <ul id="aboutSubnav" className="subnav">
-                                <li id="strengthNav"><Link href="/financial-strength" passHref>{strength}</Link></li>
-                            </ul>
-                        </li>
+
+                        <li id="airlinesSubnav" className="topnav"><Link href="/issuers" passHref>{issuers}</Link></li>
+                        <li id="investorsSubnav" className="topnav"><Link href="/investors" passHref>{investors}</Link></li>
+                        <li id="strengthNav" className="topnav"><Link href="/financial-strength" passHref>{strength}</Link></li>
                         <li id="contactNav"><Link href="/contact-us" passHref>{contact}</Link></li>
                         <li id="navLanguage" className="flagLink">{<LanguageSwitcher />}</li>
                     </ul>
