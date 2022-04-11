@@ -5,11 +5,11 @@ import { useRouter } from 'next/router'
 const footerContent = {
     "en": {
         disclaimer: {
-            one: 'Babcock & Brown LLC ("B&B") is an unregistered entity providing financial advisory services and an affiliate under common control of Babcock & Brown Securities. Babcock & Brown Securities is an SEC registered broker/dealer,',
+            one: 'Babcock & Brown Securities LLC (“Babcock & Brown”) is an SEC registered broker/dealer, ',
             finra: 'FINRA member',
-            two: "firm and member of SIPC (for details, please see",
+            two: " firm and member of SIPC (for details, please see",
             sipc: 'www.sipc.org',
-            three: ").  All securities related activities and/or securities transactions are conducted solely through Babcock & Brown Securities. Note: Counterparties means an entity that is a borrower, lessee, investor, lender, lessor, buyer, seller or obligor in a transaction involving B&B or Babcock &amp; Brown Securities (or an affiliate thereof). Activities of B&B described in this website may have been completed by an affiliate of B&B."
+            three: "). All securities related activities and/or securities transactions are conducted solely through Babcock & Brown Securities LLC. Burnham Sterling & Company LLC  is an unregistered entity providing financial advisory services and an affiliate under common control of Babcock & Brown. Activities of Babcock & Brown described in this website may have been completed by an affiliate of Babcock & Brown."
         }
     },
     "ja": {
