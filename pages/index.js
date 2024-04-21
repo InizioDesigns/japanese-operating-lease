@@ -13,10 +13,10 @@ const homeContent = {
             description:
                 "Babcock & Brown Securities has placed hundreds of millions of dollars in private debt, equity and sale/leaseback transactions backed by assets. We specialize in advising issuers, investors and sellers on financing options and placing transactions valued between $50 million and $1 billion.",
         },
-        clients: "Top Clients",
+        clients: "Top Industry Counterparties",
         access: "Global Access",
         placement: "Debt, Equity & Lease Placement",
-        mgmt: "Experience Mgmt Team",
+        mgmt: "KPI Enhancement",
     },
     "ja": {
         hero: {
