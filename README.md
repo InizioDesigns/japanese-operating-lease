@@ -4,7 +4,7 @@ Next.js using the i18n routing feature to provide Japanese version. It shows a n
 For further documentation on this feature see the [Internationalized Routing docs](https://nextjs.org/docs/advanced-features/i18n-routing).
 
 ## Hosting
-Site is hosted at AWS using the Inizio corporate account and it is deployed with Amplify.
+Site is hosted at AWS using the Inizio corporate account and it is deployed with Amplify. Login with mark.kroh
 
 ## Preview
 
