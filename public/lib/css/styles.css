@@ -245,10 +245,20 @@ footer .sipclink {
 /* ====================================  header  ================================ */
 a#mainlogo {
   display: block; }
-  a#mainlogo img {
-    width: 100%;
-    max-width: 375px;
-    display: block; }
+
+a#mainlogo img {
+  width: 100%;
+  max-width: 375px;
+  display: block; }
+
+#babcocklogo {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#babcocklogo img {
+  max-width: 90%;
+}
 
 nav#mainnav {
   color: #fff;

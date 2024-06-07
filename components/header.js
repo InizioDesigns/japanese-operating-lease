@@ -28,8 +28,8 @@ const navContent = {
 // eslint-disable-next-line react/display-name
 const Logo = React.forwardRef(({ onClick, href }, ref) => {
     return (
-      <a href={href} onClick={onClick} ref={ref}>
-        <Image src="/lib/img/main-logo.svg" alt="Babcock and Brown logo" height="68" width="475" />
+      <a href={href} onClick={onClick} ref={ref} id="babcocklogo">
+        <Image src="/lib/img/main-logo-55.webp" alt="Babcock and Brown logo" height="55" width="540" />
       </a>
     )
   })
