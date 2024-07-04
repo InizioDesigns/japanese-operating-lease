@@ -256,7 +256,7 @@ a#mainlogo img {
   padding-right: 5%;
 }
 
-#babcocklogo img {
+#babcocklogo > span {
   max-width: 90%;
 }
 
