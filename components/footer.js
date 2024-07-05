@@ -5,20 +5,16 @@ import { useRouter } from 'next/router'
 const footerContent = {
     "en": {
         disclaimer: {
-            one: 'Babcock & Brown Securities LLC (“Babcock & Brown”) is an SEC registered broker/dealer, ',
+            one: 'The following firms are affiliated and under common control: Burnham Sterling & Company LLC, an unregistered entity providing financial advisory services; Babcock & Brown Securities LLC (BBS), an SEC registered broker/dealer and FINRA member firm; and Burnham Sterling Asset Management LLC (BSAM), a registered investment adviser. All securities related activities and/or securities transactions are conducted solely through Babcock & Brown Securities LLC, an SEC registered broker/dealer and',
             finra: 'FINRA member',
-            two: " firm and member of SIPC (for details, please see",
-            sipc: 'www.sipc.org',
-            three: "). All securities related activities and/or securities transactions are conducted solely through Babcock & Brown Securities LLC. Burnham Sterling & Company LLC  is an unregistered entity providing financial advisory services and an affiliate under common control of Babcock & Brown. Activities of Babcock & Brown described in this website may have been completed by an affiliate of Babcock & Brown."
+            two: 'firm.'
         }
     },
     "ja": {
         disclaimer: {
-            one: 'Babcock & Brown LLC（「B&B」）は、金融助言サービスを提供する未登録の機関であり、Babcock & Brown証券の共通の管理下にある関連会社です。Babcock & Brown証券は、SECに登録されたブローカー/ディーラであり、',
+            one: '財務顧問サービスを提供する未登録会社Burnham Sterling &amp; Company LLC、SEC 登録ブローカー/ディーラーおよび',
             finra: 'FINRAメンバー',
-            two: "機関であり、SIPCのメンバーです（詳細は、",
-            sipc: 'www.sipc.org',
-            three: "をご参照ください。）。全ての有価証券に関連する活動及び/又は有価証券取引は、Babcock & Brown証券を通じて行われます。注：カウンターパーティーとは、B&B又はBabcock & Brown証券（又はその関連会社）が関与する取引の借主、レッシー、投資家、貸主、レッサー、買主、売主又は債務者である機関をいいます。本ウエブサイトに記載されるB&Bの活動は、B&Bの関連会社により実行されたものである場合があります。",
+            two: "メンバーファームBabcock &amp; Brown Securities LLC (BBS)、 資産運用会社であるバーヌハム・スターリング・アセット・マネジメントLLC (BSAM) の 3社は関連会社であり、共通の管理下にあります。証券関連活動および証券取引すべては BBSのみ通じて行われ、すべての資産運用サービスは BSAM によって提供されます。"
         }
     },
 };
@@ -28,13 +24,15 @@ export default function Footer(props) {
     const { locale, locales, defaultLocale } = router
     const { one, two, three, sipc, finra } = footerContent[locale].disclaimer;
     const wrapperClass = locale === 'ja' ? 'footer-ja' : 'footer-en';
+    const year = new Date;
+    const thisYear = year.getFullYear(); 
 
     return (
         <div id="footerWrapper" className={wrapperClass}>
             <footer>
                 <div id="sec">
-                    <p id="disclaimer" className={locale}>{one} <Link href="http://www.finra.org" className="sipclink" target="_blank" rel="noreferrer">{finra}</Link> {two} <Link href="http://www.sipc.org" className="sipclink" target="_blank" rel="noreferrer">{sipc}</Link> {three}</p>
-                    <p id="copyright">&copy; 2022 Babcock &amp; Brown, LLC. All rights reserved. <span><Link href="/lib/docs/BurnhamBusinessContinuity.pdf">Business Continuity</Link></span> | <span><Link href="/privacy-policy">Privacy Policy</Link></span> | <span><Link href="/terms-conditions">Terms and Conditions</Link></span></p>
+                    <p id="disclaimer" className={locale}>{one} <Link href="http://www.finra.org" className="sipclink" target="_blank" rel="noreferrer">{finra}</Link> {two}</p>
+                    <p id="copyright">&copy; {thisYear} Babcock &amp; Brown, LLC. All rights reserved. <span><Link href="/lib/docs/BurnhamBusinessContinuity.pdf">Business Continuity</Link></span> | <span><Link href="/privacy-policy">Privacy Policy</Link></span> | <span><Link href="/terms-conditions">Terms and Conditions</Link></span></p>
                 </div>
             </footer>
         </div>
