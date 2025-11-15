@@ -1,0 +1,138 @@
+# Japanese Operating Lease Project - Cursor Rules
+
+## Project Overview
+This is a React + Vite application explaining Japanese Operating Lease (JOL) structures. The application uses React Router for navigation, Tailwind CSS for styling, and is deployed on Netlify.
+
+## Project Structure
+
+### Root Directory
+- `README.md` - Main project README (keep at root for visibility)
+- Configuration files: `package.json`, `vite.config.js`, `tailwind.config.js`, `postcss.config.js`, `eslint.config.js`, `netlify.toml`
+- `index.html` - Main HTML entry point
+
+### Source Code (`/src`)
+```
+/src
+  ├── main.jsx           # Application entry point
+  ├── App.jsx            # Main app component with routing
+  ├── index.css          # Global styles
+  ├── /components        # Reusable UI components
+  │   ├── Navigation.jsx # Main navigation component
+  │   └── Footer.jsx     # Footer component
+  ├── /pages             # Page components (one per route)
+  │   ├── Home.jsx
+  │   ├── HowItWorks.jsx
+  │   ├── Parties.jsx
+  │   ├── Economics.jsx
+  │   ├── JolVsJolco.jsx
+  │   ├── ActiveParticipants.jsx
+  │   └── RecentTrends.jsx
+  └── /assets            # Static assets used in components
+```
+
+### Documentation (`/docs`)
+All documentation files should be placed in the `/docs` directory:
+- `ACCESSIBILITY.md` - Accessibility guidelines and compliance
+- `DEPLOYMENT_GUIDE.md` - Deployment instructions and configuration
+- `FACT_CHECK_SUMMARY.md` - Content verification and sources
+- `PROJECT_SUMMARY.md` - Detailed project overview
+- `SOURCES.md` - References and citations
+- `TESTING_CHECKLIST.md` - Testing procedures and checklists
+
+### Public Assets (`/public`)
+Static assets served directly:
+- `favicon.png`
+- `jollogo.png`
+- `vite.svg`
+- `works1.png`
+
+### Build Output (`/dist`)
+Generated build files (not committed to git)
+
+## Coding Standards
+
+### React Components
+- Use functional components with hooks
+- Follow PascalCase for component names
+- One component per file
+- Place reusable components in `/src/components`
+- Place page-specific components in `/src/pages`
+
+### Styling
+- Use Tailwind CSS utility classes
+- Follow mobile-first responsive design
+- Maintain consistent color scheme (purple primary: #7c3aed, orange accent: #fb923c)
+- Ensure WCAG AA accessibility compliance
+
+### File Naming
+- React components: PascalCase (e.g., `Navigation.jsx`, `HowItWorks.jsx`)
+- Configuration files: lowercase with extensions (e.g., `vite.config.js`)
+- Documentation: UPPERCASE with underscores (e.g., `DEPLOYMENT_GUIDE.md`)
+- Assets: lowercase with hyphens if needed
+
+### Git Workflow
+- Keep documentation organized in `/docs` directory
+- Exclude build artifacts (`/dist`, `/node_modules`) from version control
+- Include all configuration files in version control
+
+## Navigation Structure
+The application uses React Router v6 with the following routes:
+- `/` - Home
+- `/how-it-works` - How It Works
+- `/parties` - Key Parties
+- `/economics` - Economics
+- `/jol-vs-jolco` - JOL vs JOLCO
+- `/active-participants` - Active Participants
+- `/recent-trends` - Recent Trends
+
+## Development Commands
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Deployment
+- Platform: Netlify
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Node version: 18.x
+
+## Best Practices
+
+### When Adding New Features
+1. Create components in appropriate directories (`/components` or `/pages`)
+2. Update navigation in `Navigation.jsx` if adding new pages
+3. Update routing in `App.jsx` for new pages
+4. Document significant changes in `/docs` directory
+5. Test responsiveness and accessibility
+6. Run linter before committing
+
+### When Adding Documentation
+1. Place all `.md` documentation files in `/docs` directory
+2. Keep `README.md` at project root
+3. Use descriptive filenames in UPPERCASE
+4. Update this `.cursorrules` file if adding new documentation types
+
+### Component Development
+- Keep components focused and single-purpose
+- Use props for configuration and data passing
+- Implement proper accessibility attributes (ARIA labels, semantic HTML)
+- Ensure responsive design across all breakpoints
+- Add loading states and error handling where appropriate
+
+## Accessibility Requirements
+- Maintain keyboard navigation support
+- Provide alt text for all images
+- Ensure sufficient color contrast (WCAG AA)
+- Use semantic HTML elements
+- Test with screen readers
+
+## Performance Guidelines
+- Lazy load routes with React Router
+- Optimize images before adding to `/public`
+- Keep bundle size minimal
+- Use Vite's code splitting features
+
+---
+Last updated: 2025-11-15
+
